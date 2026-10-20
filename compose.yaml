@@ -1,7 +1,7 @@
 
 services:
   app:
-    image: ghcr.io/mattgayheart/docker-deployment-template:latest # DEPLOY_IMAGE
+    image: ghcr.io/mattgayheart/docker-deployment-template:9e52cc57b4853e24a7318d90f55a6ad784e406ad # DEPLOY_IMAGE
     restart: unless-stopped
 
     networks:
