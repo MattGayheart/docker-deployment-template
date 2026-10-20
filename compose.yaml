@@ -1,11 +1,13 @@
 
 services:
   app:
-    image: ghcr.io/mattgayheart/docker-deployment-template:573a376987ccbd57655e7f67796ee63181497288 # DEPLOY_IMAGE
+    image: ghcr.io/mattgayheart/docker-deployment-template:latest # DEPLOY_IMAGE
     restart: unless-stopped
 
     networks:
-      - proxy
+      proxy:
+        aliases:
+          - "${COMPOSE_PROJECT_NAME}-web"
 
 networks:
   proxy:
