@@ -1,7 +1,7 @@
 
 services:
   app:
-    image: nginx:stable-alpine # DEPLOY_IMAGE
+    image: ghcr.io/mattgayheart/docker-deployment-template:573a376987ccbd57655e7f67796ee63181497288 # DEPLOY_IMAGE
     restart: unless-stopped
 
     networks:
