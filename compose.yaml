@@ -1,0 +1,12 @@
+
+services:
+  app:
+    image: nginx:stable-alpine # DEPLOY_IMAGE
+    restart: unless-stopped
+
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
